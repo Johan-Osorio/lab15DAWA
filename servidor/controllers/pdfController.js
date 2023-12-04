@@ -25,7 +25,7 @@ exports.generarPDf = async(req,res) =>{
         doc.autoTable({
         theme: 'grid',
         startY: 90,
-        head: [[`Productos (${productos.length})`, 'Categoría','Precio','Ubicacion','Fecha de Creacion'],],
+        head: [[`Productos (${productos.length})`, 'Vuelo','Avión','Piloto','Fecha de Último Mantenimiento'],],
         body: productos.map(producto => [producto.producto, producto.categoria, producto.precio,producto.ubicacion,producto.fechaCreacion])
         });
 
